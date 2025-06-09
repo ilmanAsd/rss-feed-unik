@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: unik-rss-feed
+    env: node
+    branch: main
+    buildCommand: npm install
+    startCommand: npm run start
+    envVars:
+      - key: PORT
+        value: 3000
